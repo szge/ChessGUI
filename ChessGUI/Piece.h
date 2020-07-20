@@ -1,24 +1,38 @@
 #pragma once
+#include "Color.h"
+#include "PieceType.h"
+#include "Board.h"
+#include "Spot.h"
+#include <vector>
+#include <cmath>
 #include <iostream>
 
 class Board;
 class Spot;
 
-enum class color{WHITE, BLACK};
-
 class Piece {
 private:
 	bool killed = false;
-	color piece_color;
+	Color piece_color;
+
+protected:
+	PieceType piece_type;
 
 public:
 	explicit
-	Piece(color piece_color);
-	color getColor();
-	void setColor(color piece_color);
+	Piece(Color piece_Color);
+	Color getColor();
+	PieceType getPieceType();
 	bool isKilled();
 	void setKilled(bool killed);
-	// to be implemented by child classes
-	virtual bool canMove(Board board, Spot start, Spot end) = 0;
+	bool canMove(Board board, Spot start, Spot end);
+
+	// given a list of moves prints their (x,y)
+	static void printSpots(std::vector<Spot> a);
+
+	// following functions to be implemented by child classes
+
+	virtual std::vector<Spot> getValidMoves(Board board, Spot start) = 0;
+
 	virtual operator std::string() const { return "."; };
 };

@@ -4,8 +4,8 @@
 class Rook : public Piece
 {
 public:
-	Rook(color piece_color);
-	bool canMove(Board board, Spot start, Spot end);
+	Rook(Color piece_color);
+	std::vector<Spot> getValidMoves(Board board, Spot start);
 	operator std::string() const { return "r"; }
 };
 

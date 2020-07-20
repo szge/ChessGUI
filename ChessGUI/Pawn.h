@@ -5,9 +5,10 @@ class Pawn : public Piece
 {
 private:
 	bool firstMove = false;
+	bool enPassant = false;
 public:
-	Pawn(color piece_color);
-	bool canMove(Board board, Spot start, Spot end);
+	Pawn(Color piece_color);
+	std::vector<Spot> getValidMoves(Board board, Spot start);
 	operator std::string() const { return "p"; }
 };
 

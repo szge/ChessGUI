@@ -13,69 +13,160 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\Pieces">
+    <Filter Include="Header Files\Domain">
+      <UniqueIdentifier>{9b2e8c04-34ac-4a19-95b9-849cb41733d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Presentation">
+      <UniqueIdentifier>{baaf401c-da2e-4c3d-a8dd-e04b25c67039}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Data">
+      <UniqueIdentifier>{20c147e3-f5ae-4b9a-89ec-0cb0486ae80e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Domain\Entities">
+      <UniqueIdentifier>{5f54e373-0651-448f-8b08-1bab8ff4acb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Domain\Interface">
+      <UniqueIdentifier>{c5814418-56e1-4d9e-ac4b-280eefd11533}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Domain">
+      <UniqueIdentifier>{e81bb7af-7e05-475c-ad86-a0f195ce962c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data">
+      <UniqueIdentifier>{07e42108-bf45-45f4-8ced-1a8e7fb8b70a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Presentation">
+      <UniqueIdentifier>{f9ef80a1-20c6-4638-b94f-7eb422823e93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Domain\Entities">
+      <UniqueIdentifier>{31f31eeb-a282-46b7-a03f-0ba93464b99f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Domain\Entities\Pieces">
       <UniqueIdentifier>{bcbbee19-a5e7-4c5b-a0c4-98c216fbb5d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Domain\Interface">
+      <UniqueIdentifier>{093de37e-9256-4efd-955d-d3ab34e743d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Presentation\Text GUI">
+      <UniqueIdentifier>{b4d3cee5-925c-4159-999a-d1bedc169bcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Presentation\Windows App">
+      <UniqueIdentifier>{fc9295e5-0690-4d3a-92a7-d6aba2406e5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Presentation\Windows App">
+      <UniqueIdentifier>{2d64c186-7cc2-421e-aebf-efaa9dd7024d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Presentation\Text GUI">
+      <UniqueIdentifier>{61827e3d-9755-44fb-b342-740174e6f5f4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ChessGUI.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Piece.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Spot.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Pawn.cpp">
-      <Filter>Source Files\Pieces</Filter>
-    </ClCompile>
-    <ClCompile Include="Board.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Domain\Entities\Pieces</Filter>
     </ClCompile>
     <ClCompile Include="Rook.cpp">
-      <Filter>Source Files\Pieces</Filter>
+      <Filter>Source Files\Domain\Entities\Pieces</Filter>
     </ClCompile>
     <ClCompile Include="Knight.cpp">
-      <Filter>Source Files\Pieces</Filter>
+      <Filter>Source Files\Domain\Entities\Pieces</Filter>
     </ClCompile>
     <ClCompile Include="Bishop.cpp">
-      <Filter>Source Files\Pieces</Filter>
+      <Filter>Source Files\Domain\Entities\Pieces</Filter>
     </ClCompile>
     <ClCompile Include="King.cpp">
-      <Filter>Source Files\Pieces</Filter>
+      <Filter>Source Files\Domain\Entities\Pieces</Filter>
     </ClCompile>
     <ClCompile Include="Queen.cpp">
-      <Filter>Source Files\Pieces</Filter>
+      <Filter>Source Files\Domain\Entities\Pieces</Filter>
+    </ClCompile>
+    <ClCompile Include="Spot.cpp">
+      <Filter>Source Files\Domain\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Board.cpp">
+      <Filter>Source Files\Domain\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Piece.cpp">
+      <Filter>Source Files\Domain\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="ChessInterface.cpp">
+      <Filter>Source Files\Domain\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files\Presentation\Text GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="TextGUI.cpp">
+      <Filter>Source Files\Presentation\Text GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="App.cpp">
+      <Filter>Source Files\Presentation\Windows App</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Piece.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Spot.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Pawn.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Board.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Rook.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Knight.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Bishop.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Queen.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Color.h">
+      <Filter>Header Files\Domain\Entities</Filter>
     </ClInclude>
     <ClInclude Include="King.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Domain\Entities</Filter>
     </ClInclude>
+    <ClInclude Include="Knight.h">
+      <Filter>Header Files\Domain\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Pawn.h">
+      <Filter>Header Files\Domain\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Piece.h">
+      <Filter>Header Files\Domain\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="PieceType.h">
+      <Filter>Header Files\Domain\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Queen.h">
+      <Filter>Header Files\Domain\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Rook.h">
+      <Filter>Header Files\Domain\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Spot.h">
+      <Filter>Header Files\Domain\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Board.h">
+      <Filter>Header Files\Domain\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Bishop.h">
+      <Filter>Header Files\Domain\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="ChessInterface.h">
+      <Filter>Header Files\Domain\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="TextGUI.h">
+      <Filter>Header Files\Presentation\Text GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files\Presentation\Windows App</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files\Presentation\Windows App</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files\Presentation\Windows App</Filter>
+    </ClInclude>
+    <ClInclude Include="App.h">
+      <Filter>Header Files\Presentation\Windows App</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="App.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="small.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="App.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

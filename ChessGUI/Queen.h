@@ -4,8 +4,8 @@
 class Queen : public Piece
 {
 public:
-	Queen(color piece_color);
-	bool canMove(Board board, Spot start, Spot end);
+	Queen(Color piece_color);
+	std::vector<Spot> getValidMoves(Board board, Spot start);
 	operator std::string() const { return "q"; }
 };
 

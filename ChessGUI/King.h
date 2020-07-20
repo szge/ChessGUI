@@ -7,9 +7,9 @@ private:
 	bool castled = false;
 
 public:
-	King(color piece_color);
-	bool canMove(Board board, Spot start, Spot end);
+	King(Color piece_color);
 	bool hasCastled();
+	std::vector<Spot> getValidMoves(Board board, Spot start);
 	operator std::string() const { return "k"; }
 };
 

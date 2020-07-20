@@ -4,8 +4,8 @@
 class Knight : public Piece
 {
 public:
-	Knight(color piece_color);
-	bool canMove(Board board, Spot start, Spot end);
+	Knight(Color piece_color);
+	std::vector<Spot> getValidMoves(Board board, Spot start);
 	operator std::string() const { return "n"; }
 };
 

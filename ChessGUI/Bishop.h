@@ -4,8 +4,8 @@
 class Bishop : public Piece
 {
 public:
-	Bishop(color piece_color);
-	bool canMove(Board board, Spot start, Spot end);
+	Bishop(Color piece_color);
+	std::vector<Spot> getValidMoves(Board board, Spot start);
 	operator std::string() const { return "b"; }
 };
 
